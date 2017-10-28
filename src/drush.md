@@ -3,6 +3,11 @@ title: Drush cheatsheet
 draft: false
 layout: cheatsheet.html
 ---
+
+This cheatsheet is not a complete list of drush commands. It is however some of the drush commands commonly used in the production and maintenance of a Drupal site.
+
+Items in [] are place holders for thinks like file paths, user names or drush aliases. 
+
 |Task          |Command                           |Notes                                                    |
 |-----------------------|----------------------------------|---------------------------------------------------------|
 |Drop database          |drush sql-drop	                   |Drop all tables in a given database                      |
@@ -19,7 +24,9 @@ layout: cheatsheet.html
 |List drush aliases	    |drush sa	                       |                                                         |
 |Switch module to dev version| drush dl [module] --dev     |                                                         |
 
-To import a databse directly from a gz file use the following command: gunzip -c [database.gz path] | drush sqlc Information on Drush command can be found here:
+To import a databse directly from a gz file use the following command: `gunzip -c [database.gz path] | drush sqlc` 
+
+Information on Drush command can be found here:
 
     http://www.drushcommands.com
     http://drush.ws/
