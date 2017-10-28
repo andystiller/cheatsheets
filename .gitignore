@@ -14,3 +14,6 @@ _book
 *.epub
 *.mobi
 *.pdf
+
+# Don't commit the output
+build

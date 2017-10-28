@@ -1,0 +1,41 @@
+{#
+    This is the base template used as the application layout which contains the
+    common elements and decorates all the other templates.
+    See https://symfony.com/doc/current/book/templating.html#template-inheritance-and-layouts
+ #}
+ <!DOCTYPE html>
+ <html>
+     <head>
+         <meta charset="UTF-8" />
+         <meta name="viewport" content="width=device-width, initial-scale=1"/>
+         <title>{% block title %}{{title}}{% endblock %}</title>
+     </head>
+ 
+     <body>
+ 
+         {% block header %}
+             <header>
+                 <h1>{{title}}</h1>
+             </header>
+         {% endblock %}
+ 
+         <div class="container body-container">
+             {% block body %}
+                 <div class="row">
+                     <div id="main" class="col-sm-9">
+                        {{contents}}
+ 
+                         {% block main %}{% endblock %}
+                     </div>
+                 </div>
+             {% endblock %}
+         </div>
+ 
+         {% block footer %}
+             <footer>
+                 <div class="container">
+                 </div>
+             </footer>
+         {% endblock %}
+     </body>
+ </html>
