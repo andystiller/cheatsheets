@@ -6,9 +6,9 @@ Metalsmith(__dirname)         // __dirname defined by node.js:
 // name of current working directory
 .metadata({                 // add any variable you want
 // use them in layout-files
-sitename: "My Static Site & Blog",
-siteurl: "http://example.com/",
-description: "It's about saying »Hello« to the world.",
+sitename: "Everyday cheatsheets",
+siteurl: "http://andyhat.co.uk/cheatsheets",
+description: "Commonly used command references",
 generatorname: "Metalsmith",
 generatorurl: "http://metalsmith.io/"
 })
