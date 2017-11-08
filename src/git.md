@@ -3,6 +3,9 @@ title: Git cheatsheet
 draft: false
 layout: cheatsheet.html
 ---
+## Initial set-up
+
+## Common Tasks
 |Task                  |Command                  |Notes                                                          |
 |----------------------|-------------------------|---------------------------------------------------------------|
 |Clone a repository    |`git clone [repository]` |Initial checkout of a git repository                           |
@@ -24,17 +27,13 @@ layout: cheatsheet.html
 git fetch --all
 git reset --hard origin/master
 ```
+Note:
+    This will delete files that are not in git.
+
 ### Explanation:
 
 git fetch downloads the latest from remote without trying to merge or rebase anything.
 
 Then the git reset resets the master branch to what you just fetched. The –hard option changes all the files in your working tree to match the files in origin/master, so if you have any local changes, they will be lost. With or without –hard, any local commits that haven't been pushed will be lost.
 
-## To reset to origin/dev
-
-git fetch --all
-git reset --hard origin/dev
-
-Note:
-    This will delete files that are not in git including.
-
+##
