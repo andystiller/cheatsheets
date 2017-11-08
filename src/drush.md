@@ -12,7 +12,7 @@ Detailed information on Drush command can be found here:
 
 Items in [] are place holders for things like file paths, user names or drush aliases. 
 
-|Task          |Command                           |Notes                                                    |
+|Task                   |Command                           |Notes                                                    |
 |-----------------------|----------------------------------|---------------------------------------------------------|
 |Drop database          |`drush sql-drop`                  |Drop all tables in a given database                      |
 |Dump database          |`drush sql-dump --gzip > [sql file]`|Dumps the database to the specified file in tar.gz format|
