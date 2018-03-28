@@ -6,7 +6,7 @@ colours: git-red
 ---
 ## Initial set-up
 
-Obtain and install Git following the instructions at http://git-scm.com
+Obtain and install Git following the instructions at <http://git-scm.com>
 
 ### Configure user information for all local repositories
 
