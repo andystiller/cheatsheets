@@ -4,9 +4,11 @@ draft: false
 layout: cheatsheet.html
 ---
 ## Initial set-up
+
 Obtain and install Git following the instructions at http://git-scm.com
 
 ### Configure user information for all local repositories
+
 Set the name you want attached to your commit transactions
 `git config --global user.name "[name]"`
 
@@ -19,15 +21,17 @@ Enables helpful colorization of command line output
 ## Common Tasks
 
 ### Creating and downloading a repository
+
 Change directory to the place where you want to create your repository.
 `git init [project-name]` Creates a new local repository with the specified name.
 
 Alternatively you can got to [GitHub](https://github.com) or [Bitbucket](https://bitbucket.org/) and create the repository online.
 
 To start using a remote repository it needs to be clone locally.
-`git clone [repository]`   Downloads a repository and its entire version history. 
+`git clone [repository]`   Downloads a repository and its entire version history.
 
 ### Working with the files
+
 |Task                          |Command                         |Notes                                                    |
 |------------------------------|--------------------------------|---------------------------------------------------------|
 |Ignore file permission changes|`git config core.fileMode false`|Useful when files show as changed but haven't.           |
@@ -43,6 +47,7 @@ To start using a remote repository it needs to be clone locally.
 
 
 ### Branching
+
 |Task                  |Command                    |Notes                                                          |
 |----------------------|---------------------------|---------------------------------------------------------------|
 |Check out a branch    |`git checkout [branch]`    |                                                               |
@@ -53,10 +58,11 @@ To start using a remote repository it needs to be clone locally.
 |Check the changes between branches|`git diff [first-branch]...[second-branch]`|                                   |
 
 ### Pushing a pulling changes to a from a remote repository
+
 |Task                  |Command                        |Notes                                                          |
 |----------------------|-------------------------------|---------------------------------------------------------------|
 |Prune local repository|`git remote prune origin`      |Removes branches that are deleted on origin                    |
-|Find remote origin	   |`git remote show origin`       |Shows information about the origin of the git repository       |
+|Find remote origin    |`git remote show origin`       |Shows information about the origin of the git repository       |
 |Get changes from remote repository|`git fetch [bookmark]`|Downloads all history from the remote repository            |
 |Merge Changes         |`git merge [bookmark]/[branch]`|Combines bookmark’s branch into current local branch           |
 |Push changes.         |`git push [alias] [branch]`    |Uploads all local branch commits to GitHub                     |
@@ -64,11 +70,12 @@ To start using a remote repository it needs to be clone locally.
 |Get chagnes for a brnach|`git pull  [alias] [branch]` |Downloads history for a remote branch and incorporates changes |
 
 ### Patches
+
 |Task                  |Command                    |Notes                                                          |
 |----------------------|---------------------------|---------------------------------------------------------------|
 |Create patch          |`git format-patch master --stdout > [patch file]`|                                         |
-|Check patch           |`git apply --check [patch file]`|                                                          |	
-|Apply patch           |`git apply [patch file]`   |                                                               |	
+|Check patch           |`git apply --check [patch file]`|                                                          |
+|Apply patch           |`git apply [patch file]`   |                                                               |
 
 ## To reset to origin/master
 
@@ -76,10 +83,11 @@ To start using a remote repository it needs to be clone locally.
 git fetch --all
 git reset --hard origin/master
 ```
+
 Note:
     This will delete files that are not in git.
 
-### Explanation:
+### Explanation
 
 git fetch downloads the latest from remote without trying to merge or re-base anything.
 

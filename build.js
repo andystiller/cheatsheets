@@ -14,11 +14,12 @@ Metalsmith(__dirname)         // __dirname defined by node.js:
     })
     .source('./src')            // source directory
     .destination('./build')     // destination directory
-    .clean(true)                // clean destination before                       // use `collections.posts` in layouts
+    .clean(true)                // clean destination before
     .use(markdown())            // transpile all md into html
     .use(layouts({              // wrap layouts around html
         engine: 'twig',     // use the layout engine you like
     }))
     .build(function (err) {      // build process
         if (err) throw err;       // error handling is required
+        console.log('Build finished!');
     });

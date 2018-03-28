@@ -9,28 +9,31 @@
          <meta charset="UTF-8" />
          <meta name="viewport" content="width=device-width, initial-scale=1"/>
          <title>{% block title %}{{title}}{% endblock %}</title>
+         <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+         <link rel="stylesheet" href="styles/normalize/normalize.css">
+         <link rel="stylesheet" href="styles/milligram/milligram.min.css">
      </head>
- 
+
      <body>
- 
+
          {% block header %}
              <header>
                  <h1>{{title}}</h1>
              </header>
          {% endblock %}
- 
+
          <div class="container body-container">
              {% block body %}
                  <div class="row">
                      <div id="main" class="col-sm-9">
                         {{contents}}
- 
+
                          {% block main %}{% endblock %}
                      </div>
                  </div>
              {% endblock %}
          </div>
- 
+
          {% block footer %}
              <footer>
                  <div class="container">
