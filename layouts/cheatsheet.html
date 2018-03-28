@@ -12,9 +12,10 @@
          <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
          <link rel="stylesheet" href="styles/normalize/normalize.css">
          <link rel="stylesheet" href="styles/milligram/milligram.min.css">
+         <link rel="stylesheet" href="styles/cheatsheet.css">
      </head>
 
-     <body>
+     <body class="cheatsheet {{colours}}">
 
          {% block header %}
              <header>
@@ -25,7 +26,7 @@
          <div class="container body-container">
              {% block body %}
                  <div class="row">
-                     <div id="main" class="col-sm-9">
+                     <div id="main" class="column">
                         {{contents}}
 
                          {% block main %}{% endblock %}

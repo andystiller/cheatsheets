@@ -2,6 +2,7 @@
 title: Git cheatsheet
 draft: false
 layout: cheatsheet.html
+colours: git-red
 ---
 ## Initial set-up
 

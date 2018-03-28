@@ -1,0 +1,16 @@
+/* Fix some styles from the milligram framework*/
+table code {
+    white-space: normal
+}
+
+/*Colour scheme settings*/
+.drupal-blue header{
+    background-color: #0678be;
+    color: antiquewhite;
+}
+
+.git-red header{
+    background-color: #f14e32;
+    color: antiquewhite;
+}
+
