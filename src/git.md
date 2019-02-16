@@ -38,7 +38,7 @@ To start using a remote repository it needs to be clone locally.
 |Ignore file permission changes|`git config core.fileMode false`|Useful when files show as changed but haven't.           |
 |Check for modified files      |`git status`                    |Lists all new or modified files to be committed          |
 |Add a file to the repository  |`git add [file]`                |Adds a Snapshot of the file to "staging" for versioning. |
-|Unstange a file               |`git reset [file]`              |Unstages the file, but preserve its contents.            |
+|Un-stage a file               |`git reset [file]`              |Un-stages the file, but preserve its contents.            |
 |Delete a file                 |`git rm [file]`                 |Deletes the file from the working directory and stages the deletion.|
 |Move or rename a file         |`git mv [file-original] [file-renamed]`|Changes the file name and prepares it for commit  |
 |Show changes                  |`git diff`                      |Shows all file differences not yet staged                |
@@ -68,7 +68,7 @@ To start using a remote repository it needs to be clone locally.
 |Merge Changes         |`git merge [bookmark]/[branch]`|Combines bookmark’s branch into current local branch           |
 |Push changes.         |`git push [alias] [branch]`    |Uploads all local branch commits to GitHub                     |
 |Get all changes       |`git pull`                     |Downloads bookmark history and incorporates changes            |
-|Get chagnes for a brnach|`git pull  [alias] [branch]` |Downloads history for a remote branch and incorporates changes |
+|Get changes for a branch|`git pull  [alias] [branch]` |Downloads history for a remote branch and incorporates changes |
 
 ### Patches
 

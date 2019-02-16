@@ -26,17 +26,17 @@ Items in [ ] are place holders for things like file paths, user names or drush a
 |One time login         |`drush uli [username]`            |Normallly gives you and URL of `http://default...` need to copy the last part and add your URL|
 |Clear all caches       |`drush cc all`                    |Used for Drupal 6 & 7                                    |
 |Rebuild caches         |`drush cr`                        |Used for Drupal 8                                        |
-|Show information on an extension|`drush pmi [extension]`  |I no module is specified I will shoe infomarion on all site modules|
+|Show information on an extension|`drush pmi [extension]`  |I no module is specified I will shoe information on all site modules|
 |Sanitize the current database|`drush sqlsan`              |Obscure email addresses and reset passwords              |
 |Backup site            |`drush ard --destination=[back file destination] --tar-options="--exclude=.git --exclude=sites/default/files"`|Excludes the git and files folders.|
 |Switch module to dev version|`drush dl [module] --dev`    |                                                         |
 |Site Audit             |`drush aa --html --bootstrap > [report file]`|Create a report using the Site Audit drush module and output to bootstrap html.|
 
-To import a databse directly from a gz file use the following command: `gunzip -c [database.gz path] | drush sqlc`
+To import a database directly from a gz file use the following command: `gunzip -c [database.gz path] | drush sqlc`
 
 ## Using Aliases
 
-The following command uses drush alaises to change to the website directory. ```cd `drush dd @[alias]` ```
+The following command uses drush aliases to change to the website directory. ```cd `drush dd @[alias]` ```
 
 |Task                   |Command                           |Notes                                                    |
 |-----------------------|----------------------------------|---------------------------------------------------------|
