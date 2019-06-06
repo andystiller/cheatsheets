@@ -6,8 +6,8 @@
   "dependencies": {
     "metalsmith": "^2.3.0",
     "metalsmith-layouts": "^1.8.1",
-    "metalsmith-markdown": "^0.2.2",
-    "twig": "^1.13.2"
+    "metalsmith-markdown": "^1.2.0",
+    "twig": "^1.13.3"
   },
   "devDependencies": {},
   "scripts": {
